@@ -36,15 +36,35 @@ public class PersonForEquals {
     public boolean equals(Object obj) {
         // TODO: please modify the following code to pass the test
         // <--start
-        throw new NotImplementedException();
+        try{
+            if (this == obj){ return true; }
+            if (obj == null || getClass() != obj.getClass()){ return false; }
+
+            PersonForEquals myPerson = (PersonForEquals) obj;
+            return (myPerson.name == this.name && myPerson.yearOfBirth == this.yearOfBirth);
+        }
+        catch(NotImplementedException ex)
+        {
+            throw ex;
+        }
+        //throw new NotImplementedException();
         // --end-->
     }
+
+
 
     @Override
     public int hashCode() {
         // TODO: please modify the following code to pass the test
         // <--start
-        throw new NotImplementedException();
+        try{
+            return (int) yearOfBirth * name.hashCode();
+        }
+        catch(NotImplementedException ex)
+        {
+            throw ex;
+        }
+        //throw new NotImplementedException();
         // --end-->
     }
 }
