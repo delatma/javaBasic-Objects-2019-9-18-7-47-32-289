@@ -7,7 +7,5 @@ public class ClosableStateReference {
         return isClosed;
     }
 
-    public void close() {
-        isClosed = true;
-    }
+    public void close() { isClosed = true; }
 }

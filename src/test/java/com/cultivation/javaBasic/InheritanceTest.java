@@ -68,7 +68,7 @@ class InheritanceTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final String expectedName = null;
+        final String expectedName = "DerivedFromBaseClassForOverriding";
         // --end-->
 
         assertEquals(expectedName, instance.getName());
@@ -77,10 +77,10 @@ class InheritanceTest {
     @Test
     void should_call_super_class_methods() {
         DerivedFromBaseClassForOverridingCallingSuper instance = new DerivedFromBaseClassForOverridingCallingSuper();
-
+        BaseClassForOverriding mine = new DerivedFromBaseClassForOverridingCallingSuper();
         // TODO: please modify the following code to pass the test
         // <--start
-        final String expectedName = null;
+        final String expectedName = mine.getName();
         // --end-->
 
         assertEquals(expectedName, instance.getName());

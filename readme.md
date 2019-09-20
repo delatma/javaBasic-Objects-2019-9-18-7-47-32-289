@@ -16,9 +16,9 @@ Each repository contains a gradle java project with a number of unit tests. The 
 The 4 questions are:
 
 1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
-1. Why the test failed at first?
-1. Why you corrected the test that way?
-1. Do you have further questions on this knowledge point?
+2. Why the test failed at first?
+3. Why you corrected the test that way?
+4. Do you have further questions on this knowledge point?
 
 ## Example
 
@@ -75,5 +75,31 @@ The hint indicates that we should not write concrete number here. So I should no
 
 You could run unit tests with the help of IntelliJ. But it is also possible to run unit test via command line: `./gradlew build`.
 
-If you just want to build your code without running test. Please use `./gradlew build -x test
-`
+If you just want to build your code without running test. Please use `./gradlew build -x test`
+
+
+# Answers
+## ExceptionTest
+1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+The knowledge point of the test is to be able to access Stack Trace information and inherit Java's Exception class.
+Official Document: https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
+                   https://docs.oracle.com/javase/tutorial/essential/exceptions/chained.html
+
+2. Why the test failed at first?
+Expected values are not properly associated. StackFrameHelper was not defined.
+3. Why you corrected the test that way?
+To associate the expected values to related class' input values; inherit Exception class' correct values; and define StackFrameHelper class.
+4. Do you have further questions on this knowledge point?
+None at the moment.
+
+## InheritanceTest
+1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+2. Why the test failed at first?
+3. Why you corrected the test that way?
+4. Do you have further questions on this knowledge point?
+
+## ObjectTest
+1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+2. Why the test failed at first?
+3. Why you corrected the test that way?
+4. Do you have further questions on this knowledge point?
