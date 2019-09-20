@@ -84,7 +84,6 @@ If you just want to build your code without running test. Please use `./gradlew 
 The knowledge point of the test is to be able to access Stack Trace information and inherit Java's Exception class.
 Official Document: https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
                    https://docs.oracle.com/javase/tutorial/essential/exceptions/chained.html
-
 2. Why the test failed at first?
 Expected values are not properly associated. StackFrameHelper was not defined.
 3. Why you corrected the test that way?
@@ -94,12 +93,27 @@ None at the moment.
 
 ## InheritanceTest
 1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+The knowledge point of the test is to be able to access Stack Trace information and inherit Java's Exception class.
+Official Document:
+https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
 2. Why the test failed at first?
+Expected values do not match the results. Classes were not derived/ inherited properly.
 3. Why you corrected the test that way?
+To properly inherit traits of super classes.
 4. Do you have further questions on this knowledge point?
+None at the moment.
 
 ## ObjectTest
 1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+The knowledge point of the test is to be able to call default/overriding/overloading constructors;
+to be able to manipulate objects by passing their values/ reference.
+
+Official Document: https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html
+                   https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html
+                   https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html
 2. Why the test failed at first?
+Incorrect values used.
 3. Why you corrected the test that way?
+To match the required object value and reference and to use the correct constructors.
 4. Do you have further questions on this knowledge point?
+None so far.

@@ -38,10 +38,10 @@ public class PersonForEquals {
         // <--start
         try{
             if (this == obj){ return true; }
-            if (obj == null || getClass() != obj.getClass()){ return false; }
+            if (Objects.equals(null,obj) || !Objects.equals(getClass(),obj.getClass())){ return false; }
 
             PersonForEquals myPerson = (PersonForEquals) obj;
-            return (myPerson.name == this.name && myPerson.yearOfBirth == this.yearOfBirth);
+            return (Objects.equals(myPerson.name,this.name) && Objects.equals(myPerson.yearOfBirth,this.yearOfBirth));
         }
         catch(NotImplementedException ex)
         {
@@ -58,7 +58,7 @@ public class PersonForEquals {
         // TODO: please modify the following code to pass the test
         // <--start
         try{
-            return (int) yearOfBirth * name.hashCode();
+            return (int)yearOfBirth * name.hashCode();
         }
         catch(NotImplementedException ex)
         {

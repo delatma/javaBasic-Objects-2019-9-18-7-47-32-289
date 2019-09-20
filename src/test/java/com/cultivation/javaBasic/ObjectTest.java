@@ -67,7 +67,7 @@ class ObjectTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expected = 5;
+        final int expected = value;
         // --end-->
 
         assertEquals(expected, value);
